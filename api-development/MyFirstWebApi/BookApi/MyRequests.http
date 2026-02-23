@@ -1,0 +1,38 @@
+### Hämta alla böcker
+GET http://localhost:5270/books
+
+### Hämta en specifik bok
+GET http://localhost:5270/books/1
+
+### Skapa en bok
+POST http://localhost:5270/books
+Content-Type: application/json
+
+{
+  "name": "Dune",
+  "price": 399
+}
+
+### Låna en bok
+PUT http://localhost:5270/books/1/loan
+
+### Låna igen (ska ge 409)
+PUT http://localhost:5270/books/1/loan
+
+### Lämna tillbaka
+PUT http://localhost:5270/books/1/return
+
+### Uppdatera en bok
+PUT http://localhost:5270/books/1
+Content-Type: application/json
+
+{
+  "name": "Dune Messiah",
+  "price": 449
+}
+
+### Ta bort en bok
+DELETE http://localhost:5270/books/1
+
+### Testa felhanteraren (ska ge 404)
+GET http://localhost:5270/books/999

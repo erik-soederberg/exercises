@@ -1,0 +1,26 @@
+# Build folders
+bin/
+obj/
+
+# Rider project files
+.idea/
+*.sln.iml
+
+# User-specific files
+*.user
+*.userosscache
+*.suo
+*.ntvs*
+*.njsproj
+*.log
+
+# VS Code
+.vscode/
+
+# NuGet
+*.nupkg
+project.lock.json
+packages/
+
+# Others
+*.DS_Store
