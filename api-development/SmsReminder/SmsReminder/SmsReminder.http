@@ -1,0 +1,6 @@
+@SmsReminder_HostAddress = http://localhost:5023
+
+GET {{SmsReminder_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
